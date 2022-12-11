@@ -15,7 +15,7 @@ void setup() {
 void loop() {
   if(Serial.available()){
     //If 'mark' is not set to true, the string will be returned before the line break
-    String s = readStringQ(Serial,true,'\n');
+    String s = readStringQ(Serial,true);
     //Remove '\n'
     s.remove(s.length()-1);
     if(s.indexOf("int:") > -1){
