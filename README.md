@@ -31,7 +31,7 @@ String s = readStringQ(Serial,true,'a');
 >>s = hello
 ```
 ## int splitToInt(String str, char keyword)
-Convert string after "keyword" to Int type.Returns -1 if the character passed to keyword does not exist, and 0 if the conversion fails.Converting to Boolean only determines whether it is a "true" character (regardless of uppercase or lowercase).
+Convert string after "keyword" to Int type.Returns -1 if the character passed to keyword does not exist, and 0 if the conversion fails.
 ```
 String str = int:10;
 int i = splitToInt(str, ':');
@@ -82,7 +82,7 @@ double d = splitToDouble(str, ':');
 >>d = -1.00
 ```
 ## boolean splitToBoolean(String str, char keyword)
-Converts the string after "keyword" to boolean. Returns false if the character passed in keyword does not exist or if the conversion fails.
+Convert the string after "keyword" to Int type. Returns -1 if the character passed in keyword does not exist, and 0 if the conversion fails. Converting to boolean only tests for "true" characters (regardless of case).
 ```
 String str = boolean:True;
 boolean b = splitToBoolean(str, ':');
