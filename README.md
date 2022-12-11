@@ -31,7 +31,7 @@ String s = readStringQ(Serial,true,'a');
 >>s = hello
 ```
 ## int splitToInt(String str, char keyword)
-Convert string after "keyword" to Int type.Returns -1 if the character passed to keyword does not exist, and 0 if the conversion fails.
+Convert string after "keyword" to Int type.Returns 0 if the conversion fails.
 ```
 String str = int:10;
 int i = splitToInt(str, ':');
@@ -42,54 +42,39 @@ String str = int:10;
 int i = splitToInt(str, ':');
 >>i = 0
 ```
-```
-String str = int10.0\n;
-int i = splitToInt(str, ':');
->>i = -1
-```
 ## float splitToFloat(String str, char keyword)
-Convert string after "keyword" to Float type.Returns -1.00 if the character passed to keyword does not exist, and 0.00 if the conversion fails.
+Convert string after "keyword" to Float type.Returns 0.00 if the conversion fails.
 ```
 String str = float:10.0;
 float f = splitToFloat(str, ':');
 >>f = 10.00
 ```
 ```
-String str = float:10.0\n;
+String str = float:a10.0;
 float f = splitToFloat(str, ':');
 >>f = 0.00
 ```
-```
-String str = float10.0\n;
-float f = splitToFloat(str, ':');
->>f = -1.00
-```
 ## double splitToDouble(String str, char keyword)
-Convert string after "keyword" to Double type.Returns -1.00 if the character passed to keyword does not exist, and 0.00 if the conversion fails.
+Convert string after "keyword" to Double type.Returns 0.00 if the conversion fails.
 ```
 String str = double:10.0;
 double d = splitToDouble(str, ':');
 >>d = 10.00
 ```
 ```
-String str = double:10.0\n;
+String str = double:a10.0;
 double d = splitToDouble(str, ':');
 >>d = 0.00
 ```
-```
-String str = double10.0\n;
-double d = splitToDouble(str, ':');
->>d = -1.00
-```
 ## boolean splitToBoolean(String str, char keyword)
-Convert the string after "keyword" to Int type. Returns -1 if the character passed in keyword does not exist, and 0 if the conversion fails. Converting to boolean only tests for "true" characters (regardless of case).
+Convert the string after "keyword" to Boolean type. Converting to boolean only tests for "true" characters (regardless of case).
 ```
 String str = boolean:True;
 boolean b = splitToBoolean(str, ':');
->>b = true or 1
+>>b = true
 ```
 ```
-String str = boolean:True\n;
+String str = boolean:aTrue;
 boolean b = splitToBoolean(str, ':');
 >>b = false
 ```
