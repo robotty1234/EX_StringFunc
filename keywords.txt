@@ -1,0 +1,7 @@
+EX_StringFunc	KEYWORD1
+splitToInt	KEYWORD2
+splitToFloat	KEYWORD2
+splitToDouble	KEYWORD2
+splitToBoolean	KEYWORD2
+splitToStr	KEYWORD2
+readStringQ	KEYWORD2
