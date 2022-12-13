@@ -71,7 +71,7 @@ String splitToStr(String str, char keyword){
 }
 
 //A function that returns the message received from the serial port as a string of type String
-String readStringQ(HardwareSerial &serial, boolean mark = false, char keyword = '\n'){
+String readStringQ(HardwareSerial &serial, boolean mark, char keyword){
   String s;
   char c;
   do{
